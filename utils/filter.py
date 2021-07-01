@@ -1,4 +1,4 @@
-from csv_management.csv_management import create_csv
+from utils import create_csv
 
 
 def filter_by_category(csv_headers, lists_of_all_information):

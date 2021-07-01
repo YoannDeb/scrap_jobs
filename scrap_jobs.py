@@ -5,8 +5,7 @@ from scrapy.crawler import CrawlerProcess
 from spiders.django_jobs_spider import DjangojobsSpider
 from spiders.python_jobs_spider import PythonjobsSpider
 
-from csv_management.csv_management import extract_csv_info
-from filter.filter import filter_by_category, filter_by_type
+from utils import extract_csv_info, filter_by_category, filter_by_type
 
 
 def main():

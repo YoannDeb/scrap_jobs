@@ -28,7 +28,6 @@ class PythonjobsSpider(scrapy.Spider):
             location = job.css('.listing-location a::text').get().split(",")
             if len(location) == 2:
                 location = [location[0], '', location[1]]
-            #location = ["Boston", "NYC", "United States"]
             yield {
                 'title': job.css('.listing-company-name a::text').get(),
                 'company': job.css('.listing-company-name::text').getall()[-1].strip(),

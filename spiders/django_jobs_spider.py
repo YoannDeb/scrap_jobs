@@ -51,25 +51,3 @@ class DjangojobsSpider(scrapy.Spider):
                 'relocation': remote_relocation[i*2][-16:-13].strip()
             }
             self.job_counter += 1
-        # yield scrapy.Request("https://djangojobs.net/jobs/?page=2")
-        # yield scrapy.Request("https://djangojobs.net/jobs/?page=3")
-        # yield scrapy.Request("https://djangojobs.net/jobs/?page=4")
-        # yield scrapy.Request("https://djangojobs.net/jobs/?page=5")
-
-        # for j in range(2, 6):
-        #     yield scrapy.Request(f"https://djangojobs.net/jobs/?page={j}", callback=self.parse)
-#        for next_page in response.css('a.next'):
-#            yield response.follow(next_page, self.parse)
-
-# title = response.css('h4 a::text').get()
-# link = f"https://djangojobs.net/{response.css('h4 a::attr(href)').get()}"
-# location_pub_date = response.css("div.clearfix div.float-right::text").get()
-# city =
-# state =
-# country =
-# pub_date =
-# post_type = []
-# category = []
-# remote_relocation = response.css('div.clearfix::text').get()
-# remote =
-# relocation =

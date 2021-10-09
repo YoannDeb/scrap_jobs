@@ -1,4 +1,4 @@
-# scrap_jobs
+# scrape_jobs
 scrap jobs information off 100 last jobs on python.org/jobs and djangojobs.net/jobs using scrapy and export to csv
 creates csv with jobs for python.org/jobs by category and type
 
@@ -11,5 +11,5 @@ pip install scrapy
 scrapy startproject
 git clone 
 git clone https://github.com/YoannDeb/scrap_jobs.git
-scrap_jobs.py
+scrape_jobs.py
 '''

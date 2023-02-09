@@ -11,6 +11,6 @@ source env/bin/activate
 pip install scrapy
 scrapy startproject
 git clone 
-git clone https://github.com/YoannDeb/scrap_jobs.git
-scrape_jobs.py
+git clone https://github.com/YoannDeb/scrape_jobs.git
+python scrape_jobs.py
 ```

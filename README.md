@@ -14,3 +14,7 @@ git clone
 git clone https://github.com/YoannDeb/scrape_jobs.git
 python scrape_jobs.py
 ```
+
+## Data:
+
+Csv files will be found in data folder created 

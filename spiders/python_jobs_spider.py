@@ -20,6 +20,8 @@ class PythonjobsSpider(scrapy.Spider):
         'https://www.python.org/jobs/?page=4'
     ]
 
+    job_counter = 0
+
     def parse(self, response):
         for job in response.css('ol.list-recent-jobs li'):
             raw_type_known = job.css('.listing-job-type a ::text').getall()
@@ -41,3 +43,6 @@ class PythonjobsSpider(scrapy.Spider):
                 'remote': '',
                 'relocation': ''
             }
+            self.job_counter += 1
+
+        print(f'Total Python_jobs yielded : {self.job_counter}')

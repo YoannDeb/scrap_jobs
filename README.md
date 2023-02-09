@@ -1,5 +1,6 @@
 # scrape_jobs
 Scrape jobs information of 100 last jobs on python.org/jobs and djangojobs.net/jobs using scrapy and export to csv file.
+
 Creates csv file with jobs for python.org/jobs by category and type.
 
 ## Setup and execution:
